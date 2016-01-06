@@ -219,11 +219,11 @@ NSUInteger const kGRKInputStreamAggregateDefaultBufferSize = 32768;
     
     if ([input isKindOfClass:[NSData class]])
     {
-        retVal = [NSInputStream inputStreamWithData:input];
+        retVal = [NSInputStream inputStreamWithData:(NSData *)input];
     }
     else if ([input isKindOfClass:[NSURL class]] && [input isFileURL])
     {
-        retVal = [NSInputStream inputStreamWithFileAtPath:[input path]];
+        retVal = [NSInputStream inputStreamWithFileAtPath:[(NSURL *)input path]];
     }
     else if ([input isKindOfClass:NSInputStream.class])
     {
