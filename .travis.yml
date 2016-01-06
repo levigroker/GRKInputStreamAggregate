@@ -12,4 +12,5 @@ language: objective-c
 #- set -o pipefail && xcodebuild test -project GRKInputStreamAggregateLib/GRKInputStreamAggregateLib.xcodeproj -scheme GRKInputStreamAggregateLib -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
 #- pod lib lint --quick
 #-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'
-xctool -project GRKInputStreamAggregateLib/GRKInputStreamAggregateLib.xcodeproj -scheme GRKInputStreamAggregateLib test
+script:
+- xctool -project GRKInputStreamAggregateLib/GRKInputStreamAggregateLib.xcodeproj -scheme GRKInputStreamAggregateLib test
