@@ -3,14 +3,10 @@
 # * https://github.com/supermarin/xcpretty#usage
  
 language: objective-c
-#osx_image: xcode7.2
-#xcode_project: GRKInputStreamAggregateLib/GRKInputStreamAggregateLib.xcodeproj
-#xcode_scheme: GRKInputStreamAggregateLib
-#install:
-#- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
-#script:
-#- set -o pipefail && xcodebuild test -project GRKInputStreamAggregateLib/GRKInputStreamAggregateLib.xcodeproj -scheme GRKInputStreamAggregateLib -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO | xcpretty -c
-#- pod lib lint --quick
-#-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'
+osx_image: xcode7.2
+install:
+- gem install xcpretty --no-rdoc --no-ri --no-document --quiet
 script:
-- xctool -project GRKInputStreamAggregateLib/GRKInputStreamAggregateLib.xcodeproj -scheme GRKInputStreamAggregateLib test
+- set -o pipefail && xcodebuild test -project GRKInputStreamAggregateLib/GRKInputStreamAggregateLib.xcodeproj -scheme GRKInputStreamAggregateLib -destination "platform=iOS Simulator,OS=9.2,name=iPhone 6" ONLY_ACTIVE_ARCH=NO | xcpretty -c
+- pod lib lint --quick
+-destination 'platform=iOS Simulator,name=iPhone 6,OS=9.2'
