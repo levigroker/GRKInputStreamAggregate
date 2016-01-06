@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB5E53261C35C88A0050EC8D /* GRKInputStreamAggregateLib.h in Headers */ = {isa = PBXBuildFile; fileRef = DB5E53251C35C88A0050EC8D /* GRKInputStreamAggregateLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB5E532D1C35C88A0050EC8D /* GRKInputStreamAggregateLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB5E53231C35C88A0050EC8D /* GRKInputStreamAggregateLib.framework */; };
+		DB5E53321C35C88A0050EC8D /* GRKInputStreamAggregateLibTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5E53311C35C88A0050EC8D /* GRKInputStreamAggregateLibTests.m */; };
+		DB5E533A1C35C8B80050EC8D /* GRKInputStreamAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5E52FF1C35A8560050EC8D /* GRKInputStreamAggregate.m */; };
+		DB5E533B1C35C8B80050EC8D /* GRKInputStreamAggregate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5E52FF1C35A8560050EC8D /* GRKInputStreamAggregate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB5E532E1C35C88A0050EC8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB5E52DA1C35A7490050EC8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB5E53221C35C88A0050EC8D;
+			remoteInfo = GRKInputStreamAggregateLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB5E52FE1C35A8560050EC8D /* GRKInputStreamAggregate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRKInputStreamAggregate.h; sourceTree = "<group>"; };
+		DB5E52FF1C35A8560050EC8D /* GRKInputStreamAggregate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRKInputStreamAggregate.m; sourceTree = "<group>"; };
+		DB5E53231C35C88A0050EC8D /* GRKInputStreamAggregateLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GRKInputStreamAggregateLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5E53251C35C88A0050EC8D /* GRKInputStreamAggregateLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GRKInputStreamAggregateLib.h; sourceTree = "<group>"; };
+		DB5E53271C35C88A0050EC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB5E532C1C35C88A0050EC8D /* GRKInputStreamAggregateLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GRKInputStreamAggregateLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5E53311C35C88A0050EC8D /* GRKInputStreamAggregateLibTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GRKInputStreamAggregateLibTests.m; sourceTree = "<group>"; };
+		DB5E53331C35C88A0050EC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB5E531F1C35C88A0050EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5E53291C35C88A0050EC8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5E532D1C35C88A0050EC8D /* GRKInputStreamAggregateLib.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB5E52D91C35A7490050EC8D = {
+			isa = PBXGroup;
+			children = (
+				DB5E52FD1C35A8560050EC8D /* GRKInputStreamAggregate */,
+				DB5E53241C35C88A0050EC8D /* GRKInputStreamAggregateLib */,
+				DB5E53301C35C88A0050EC8D /* GRKInputStreamAggregateLibTests */,
+				DB5E52E31C35A7490050EC8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB5E52E31C35A7490050EC8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB5E53231C35C88A0050EC8D /* GRKInputStreamAggregateLib.framework */,
+				DB5E532C1C35C88A0050EC8D /* GRKInputStreamAggregateLibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB5E52FD1C35A8560050EC8D /* GRKInputStreamAggregate */ = {
+			isa = PBXGroup;
+			children = (
+				DB5E52FE1C35A8560050EC8D /* GRKInputStreamAggregate.h */,
+				DB5E52FF1C35A8560050EC8D /* GRKInputStreamAggregate.m */,
+			);
+			name = GRKInputStreamAggregate;
+			path = ../GRKInputStreamAggregate;
+			sourceTree = "<group>";
+		};
+		DB5E53241C35C88A0050EC8D /* GRKInputStreamAggregateLib */ = {
+			isa = PBXGroup;
+			children = (
+				DB5E53251C35C88A0050EC8D /* GRKInputStreamAggregateLib.h */,
+				DB5E53271C35C88A0050EC8D /* Info.plist */,
+			);
+			path = GRKInputStreamAggregateLib;
+			sourceTree = "<group>";
+		};
+		DB5E53301C35C88A0050EC8D /* GRKInputStreamAggregateLibTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB5E53311C35C88A0050EC8D /* GRKInputStreamAggregateLibTests.m */,
+				DB5E53331C35C88A0050EC8D /* Info.plist */,
+			);
+			path = GRKInputStreamAggregateLibTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DB5E53201C35C88A0050EC8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5E53261C35C88A0050EC8D /* GRKInputStreamAggregateLib.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DB5E53221C35C88A0050EC8D /* GRKInputStreamAggregateLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5E53341C35C88A0050EC8D /* Build configuration list for PBXNativeTarget "GRKInputStreamAggregateLib" */;
+			buildPhases = (
+				DB5E531E1C35C88A0050EC8D /* Sources */,
+				DB5E531F1C35C88A0050EC8D /* Frameworks */,
+				DB5E53201C35C88A0050EC8D /* Headers */,
+				DB5E53211C35C88A0050EC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GRKInputStreamAggregateLib;
+			productName = GRKInputStreamAggregateLib;
+			productReference = DB5E53231C35C88A0050EC8D /* GRKInputStreamAggregateLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB5E532B1C35C88A0050EC8D /* GRKInputStreamAggregateLibTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB5E53371C35C88A0050EC8D /* Build configuration list for PBXNativeTarget "GRKInputStreamAggregateLibTests" */;
+			buildPhases = (
+				DB5E53281C35C88A0050EC8D /* Sources */,
+				DB5E53291C35C88A0050EC8D /* Frameworks */,
+				DB5E532A1C35C88A0050EC8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB5E532F1C35C88A0050EC8D /* PBXTargetDependency */,
+			);
+			name = GRKInputStreamAggregateLibTests;
+			productName = GRKInputStreamAggregateLibTests;
+			productReference = DB5E532C1C35C88A0050EC8D /* GRKInputStreamAggregateLibTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB5E52DA1C35A7490050EC8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Levi Brown";
+				TargetAttributes = {
+					DB5E53221C35C88A0050EC8D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					DB5E532B1C35C88A0050EC8D = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = DB5E52DD1C35A7490050EC8D /* Build configuration list for PBXProject "GRKInputStreamAggregateLib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DB5E52D91C35A7490050EC8D;
+			productRefGroup = DB5E52E31C35A7490050EC8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB5E53221C35C88A0050EC8D /* GRKInputStreamAggregateLib */,
+				DB5E532B1C35C88A0050EC8D /* GRKInputStreamAggregateLibTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB5E53211C35C88A0050EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5E532A1C35C88A0050EC8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB5E531E1C35C88A0050EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5E533A1C35C8B80050EC8D /* GRKInputStreamAggregate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB5E53281C35C88A0050EC8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB5E53321C35C88A0050EC8D /* GRKInputStreamAggregateLibTests.m in Sources */,
+				DB5E533B1C35C8B80050EC8D /* GRKInputStreamAggregate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB5E532F1C35C88A0050EC8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB5E53221C35C88A0050EC8D /* GRKInputStreamAggregateLib */;
+			targetProxy = DB5E532E1C35C88A0050EC8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DB5E52E91C35A7490050EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+					"GRK_DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DB5E52EA1C35A7490050EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB5E53351C35C88A0050EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GRKInputStreamAggregateLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levigroker.GRKInputStreamAggregateLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DB5E53361C35C88A0050EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = GRKInputStreamAggregateLib/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levigroker.GRKInputStreamAggregateLib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DB5E53381C35C88A0050EC8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GRKInputStreamAggregateLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levigroker.GRKInputStreamAggregateLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB5E53391C35C88A0050EC8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GRKInputStreamAggregateLibTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.levigroker.GRKInputStreamAggregateLibTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB5E52DD1C35A7490050EC8D /* Build configuration list for PBXProject "GRKInputStreamAggregateLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5E52E91C35A7490050EC8D /* Debug */,
+				DB5E52EA1C35A7490050EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5E53341C35C88A0050EC8D /* Build configuration list for PBXNativeTarget "GRKInputStreamAggregateLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5E53351C35C88A0050EC8D /* Debug */,
+				DB5E53361C35C88A0050EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB5E53371C35C88A0050EC8D /* Build configuration list for PBXNativeTarget "GRKInputStreamAggregateLibTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB5E53381C35C88A0050EC8D /* Debug */,
+				DB5E53391C35C88A0050EC8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB5E52DA1C35A7490050EC8D /* Project object */;
+}
