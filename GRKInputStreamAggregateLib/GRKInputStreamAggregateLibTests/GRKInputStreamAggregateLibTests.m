@@ -37,6 +37,8 @@
 
 - (void)setStream:(NSInputStream *)stream
 {
+    _finished = NO;
+    _stream.delegate = nil;
     _stream = stream;
     _output = [[NSMutableData alloc] init];
     stream.delegate = self;
@@ -109,17 +111,18 @@
     }
 }
 
-- (void) test_GRKInputStreamAggregate_Async
+- (void)test_GRKInputStreamAggregate_Async
 {
-    GRKInputStreamAggregate * writer = [self createWriterWithBufferSize: 16];
+    GRKInputStreamAggregate * writer = [self createWriterWithBufferSize:64];
     NSInputStream *input = [writer openForInputStream];
     XCTAssert(input);
     [self setStream: input];
+    
     NSRunLoop *rl = [NSRunLoop currentRunLoop];
     [input scheduleInRunLoop: rl forMode: NSDefaultRunLoopMode];
     NSLog(@"Opening stream");
     [input open];
-    
+
     while (!_finished) {
         NSLog(@"...waiting for stream...");
         [[NSRunLoop currentRunLoop] runMode: NSDefaultRunLoopMode beforeDate: [NSDate dateWithTimeIntervalSinceNow: 0.5]];
@@ -130,6 +133,206 @@
     [input close];
     [writer close];
     XCTAssertEqualObjects([self UTF8StringFromData:_output], kExpectedOutputString);
+}
+
+- (void)test_GRKInputStreamAggregate_Async1 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async2 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async3 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async4 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async5 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async6 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async7 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async8 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async9 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async10 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async11 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async12 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async13 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async14 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async15 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async16 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async17 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async18 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async19 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async20 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async21 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async22 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async23 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async24 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async25 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async26 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async27 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async28 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async29 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async30 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async31 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async32 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async33 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async34 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async35 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async36 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async37 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async38 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async39 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async40 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async41 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async42 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async43 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async44 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async45 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async46 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async47 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async48 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async49 {
+    [self test_GRKInputStreamAggregate_Async];
+}
+
+- (void)test_GRKInputStreamAggregate_Async50 {
+    [self test_GRKInputStreamAggregate_Async];
 }
 
 @end
