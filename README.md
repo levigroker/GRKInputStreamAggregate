@@ -31,7 +31,8 @@ Example:
 		[urlRequest setHTTPMethod:@"POST"];
 		[urlRequest setValue: [NSString stringWithFormat:@"multipart/form-data; boundary=%@", kMultipartFormBoundary] forHTTPHeaderField:@"Content-Type"];
 
-		NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration] delegate:self delegateQueue:nil];
+		//NOTE: We must pass `[NSOperationQueue mainQueue]` as the `delegateQueue`
+		NSURLSession *urlSession = [NSURLSession sessionWithConfiguration:[NSURLSessionConfiguration ephemeralSessionConfiguration] delegate:self delegateQueue:[NSOperationQueue mainQueue]];
 
 		NSURLSessionUploadTask *uploadTask = [urlSession uploadTaskWithStreamedRequest:urlRequest];
 
@@ -70,6 +71,13 @@ Example:
 			//Ensure any previous aggregate gets closed
 			[self.aggregate close];
 		}
+
+As an important side note, when creating your `NSURLSession` you must pass `[NSOperationQueue mainQueue]` as the `delegateQueue`.
+This is required because `GRKInputStreamAggregate` uses `NSStream`s under the covers and
+those must be associated with an active run loop. It may be possible to utilize the
+`CFWriteStreamSetDispatchQueue` method from `CFStream.h` to replace the need for the run
+loop integration, however I have, as yet, been unsuccessful in getting this to work
+without introducing race conditions and deadlocks. Pull requests are welcome... ;)
 
 #### Disclaimer and Licence
 
