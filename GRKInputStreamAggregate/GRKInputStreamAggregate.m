@@ -21,8 +21,18 @@
 
 #import "GRKInputStreamAggregate.h"
 
+
 #if GRK_DEBUG
-#define DLog(...) NSLog(@"%s (%d) %s \"%@\"", __FILE__, __LINE__, __PRETTY_FUNCTION__, [NSString stringWithFormat:__VA_ARGS__])
+#import <pthread.h>
+#define DLog(...) NSLog(@"[%@ (%d) <%@> `%s`] %@", [[NSString stringWithCString:__FILE__ encoding:NSUTF8StringEncoding] lastPathComponent], __LINE__, threadID(), sel_getName(_cmd), [NSString stringWithFormat:__VA_ARGS__])
+
+NSString* threadID() {
+    char tidCStr[9];
+    int tidLen = snprintf(tidCStr, 9, "%x", pthread_mach_thread_np(pthread_self()));
+    NSString *threadID = [NSString stringWithCString:tidCStr encoding:NSASCIIStringEncoding];
+    threadID = [threadID substringToIndex:MIN((size_t)8, tidLen)];
+    return threadID;
+}
 #else
 #define DLog(...) do { } while (0)
 #endif
@@ -188,7 +198,7 @@ NSUInteger const kGRKInputStreamAggregateDefaultBufferSize = 32768;
     
     /*
      https://github.com/couchbase/couchbase-lite-ios/issues/424
-     Workaround for a race condition in CFStream _CFStreamCopyRunLoopsAndModes. 
+     Workaround for a race condition in CFStream _CFStreamCopyRunLoopsAndModes.
      This outputstream needs to be retained just a little longer.
      Source: https://github.com/AFNetworking/AFNetworking/issues/907
      */
